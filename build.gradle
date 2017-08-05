@@ -14,11 +14,11 @@ buildscript {
 apply plugin: 'konan'
 
 konanInterop {
-    // ...
+    cio {}
 }
 
 konanArtifacts {
     hello {
-        // ...
+        useInterop "cio"
     }
 }
